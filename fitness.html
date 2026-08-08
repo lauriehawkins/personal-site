@@ -3,27 +3,261 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fitness - Personal Site</title>
+    <title>Fitness - Laurie Hawkins</title>
+    <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
+            <li><a href="professional.html">Professional</a></li>
             <li><a href="fitness.html" class="active">Fitness</a></li>
             <li><a href="nerd.html">Nerd Stuff</a></li>
         </ul>
     </nav>
 
     <main>
-        <h1>Fitness</h1>
-        <section>
-            <p>This is where I'll track my fitness journey and share workout tips.</p>
+        <div class="hero-fitness">
+            <h1>Current Training Program</h1>
+            <p class="hero-subtitle">Week 3 - 5 Day Split</p>
+        </div>
+
+        <section class="program-section">
+            <div class="week-selector">
+                <button class="week-btn">Week 1</button>
+                <button class="week-btn">Week 2</button>
+                <button class="week-btn active">Week 3</button>
+                <button class="week-btn">Week 4</button>
+            </div>
+
+            <div class="training-split">
+                <div class="training-day" onclick="toggleDay(this)">
+                    <div class="day-header">
+                        <div class="day-title">
+                            <h3>Day 1 - Bench Press</h3>
+                            <span class="expand-icon">▼</span>
+                        </div>
+                    </div>
+                    <div class="day-content">
+                        <div class="main-lift-detail">
+                            <h4>Main Lift: Swiss Bar Bench Press</h4>
+                            <div class="lift-sets">
+                                <div class="set-row">
+                                    <span class="set-label">Working Sets:</span>
+                                    <span>4 × 6 @ 75kg</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accessories-detail">
+                            <h4>Accessories</h4>
+                            <ul class="exercise-list">
+                                <li>Incline DB Press: 3 × 12 @ 20kg</li>
+                                <li>Lateral Raises: 3 × 15 @ 7.5kg</li>
+                                <li>Tricep Pushdown: 3 × 15 @ 30kg</li>
+                                <li>EZ Bar Skull Crushers: 3 × 12 @ 12.5kg</li>
+                            </ul>
+                        </div>
+                        <div class="conditioning-detail">
+                            <h4>Conditioning</h4>
+                            <p class="circuit-format">AMRAP 15 minutes</p>
+                            <ul class="exercise-list">
+                                <li>15 Cal Row</li>
+                                <li>15 Box Jumps (24")</li>
+                                <li>10 Goblet Squats @ 36kg</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="training-day" onclick="toggleDay(this)">
+                    <div class="day-header">
+                        <div class="day-title">
+                            <h3>Day 2 - Squat</h3>
+                            <span class="expand-icon">▼</span>
+                        </div>
+                    </div>
+                    <div class="day-content">
+                        <div class="main-lift-detail">
+                            <h4>Main Lift: Safety Bar Squat</h4>
+                            <div class="lift-sets">
+                                <div class="set-row">
+                                    <span class="set-label">Working Sets:</span>
+                                    <span>4 × 6 @ 112.5kg</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accessories-detail">
+                            <h4>Accessories</h4>
+                            <ul class="exercise-list">
+                                <li>Sandbag Walking Lunges: 3 × 20 steps @ 35kg</li>
+                                <li>GHD Back Extensions: 3 × 20 (3s descent)</li>
+                                <li>Deadbugs: 3 × 12 per side</li>
+                            </ul>
+                        </div>
+                        <div class="conditioning-detail">
+                            <h4>Conditioning</h4>
+                            <p class="circuit-format">Running Intervals</p>
+                            <ul class="exercise-list">
+                                <li>5 × 300m Run</li>
+                                <li>Rest 1:1 ratio between sets</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="training-day pump-day" onclick="toggleDay(this)">
+                    <div class="day-header">
+                        <div class="day-title">
+                            <h3>Day 3 - Pump Circuit</h3>
+                            <span class="expand-icon">▼</span>
+                        </div>
+                    </div>
+                    <div class="day-content">
+                        <div class="pump-circuit-detail">
+                            <h4>Pump Circuit - 3 Rounds</h4>
+                            <ul class="exercise-list">
+                                <li>Neutral Grip Lat Pulldown: 12 reps @ 63kg</li>
+                                <li>Seated DB Shoulder Press: 12 reps @ 15kg</li>
+                                <li>Chest Supported Row: 12 reps @ 25kg each side</li>
+                                <li>EZ Bar Curls: 3 × 12</li>
+                            </ul>
+                        </div>
+                        <div class="conditioning-detail">
+                            <h4>Conditioning</h4>
+                            <p class="circuit-format">EMOM 15</p>
+                            <ul class="exercise-list">
+                                <li>Min 1: 14 Cal Echo Bike</li>
+                                <li>Min 2: 20 Wall Balls @ 7kg</li>
+                                <li>Min 3: 14 Cal Row Erg</li>
+                                <li>(Repeat pattern)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="training-day" onclick="toggleDay(this)">
+                    <div class="day-header">
+                        <div class="day-title">
+                            <h3>Day 4 - Deadlift</h3>
+                            <span class="expand-icon">▼</span>
+                        </div>
+                    </div>
+                    <div class="day-content">
+                        <div class="main-lift-detail">
+                            <h4>Main Lift: Deadlift</h4>
+                            <div class="lift-sets">
+                                <div class="set-row">
+                                    <span class="set-label">Working Sets:</span>
+                                    <span>4 × 6 @ 120kg</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accessories-detail">
+                            <h4>Accessories</h4>
+                            <ul class="exercise-list">
+                                <li>RDL: 3 × 10 @ 70kg (3s eccentric)</li>
+                                <li>Glute Bridges: 3 × 12 @ 30kg DB</li>
+                                <li>Plank: 3 × 50 seconds</li>
+                                <li>Deadbugs: 3 × 12 per side</li>
+                            </ul>
+                        </div>
+                        <div class="conditioning-detail">
+                            <h4>Conditioning</h4>
+                            <p class="circuit-format">EMOM 15</p>
+                            <ul class="exercise-list">
+                                <li>Min 1: 14 Cal Echo Bike</li>
+                                <li>Min 2: 20 Wall Balls @ 7kg</li>
+                                <li>Min 3: 14 Cal Row Erg</li>
+                                <li>(Repeat pattern)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="training-day" onclick="toggleDay(this)">
+                    <div class="day-header">
+                        <div class="day-title">
+                            <h3>Day 5 - Front Squat</h3>
+                            <span class="expand-icon">▼</span>
+                        </div>
+                    </div>
+                    <div class="day-content">
+                        <div class="main-lift-detail">
+                            <h4>Main Lift: Front Squat</h4>
+                            <div class="lift-sets">
+                                <div class="set-row">
+                                    <span class="set-label">Working Sets:</span>
+                                    <span>3 × 8 @ 75kg</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accessories-detail">
+                            <h4>Accessories</h4>
+                            <ul class="exercise-list">
+                                <li>Chest Supported Row: 12 reps @ 25kg each side</li>
+                                <li>Face Pulls: 3 × 15</li>
+                                <li>Deadbugs: 3 × 12 per side</li>
+                            </ul>
+                        </div>
+                        <div class="conditioning-detail">
+                            <h4>Conditioning</h4>
+                            <p class="circuit-format">For Time</p>
+                            <ul class="exercise-list">
+                                <li>1000m Row</li>
+                                <li>40 Wall Balls @ 7kg</li>
+                                <li>30 Box Step-Ups</li>
+                                <li>800m Run</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="achievements-compact">
+            <h2>Personal Records</h2>
+            <div class="pr-grid">
+                <div class="pr-item">
+                    <div class="pr-lift">Squat</div>
+                    <div class="pr-value">200 kg</div>
+                    <div class="pr-gain">+108 kg from 2023</div>
+                </div>
+                <div class="pr-item">
+                    <div class="pr-lift">Bench</div>
+                    <div class="pr-value">125 kg</div>
+                    <div class="pr-gain">+43 kg from 2023</div>
+                </div>
+                <div class="pr-item">
+                    <div class="pr-lift">Deadlift</div>
+                    <div class="pr-value">225 kg</div>
+                    <div class="pr-gain">+135 kg from 2023</div>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Personal Site</p>
+        <p>&copy; 2026 Laurie Hawkins</p>
     </footer>
+
+    <button id="darkModeToggle" aria-label="Toggle dark mode">🌙</button>
+    <script src="dark-mode.js"></script>
+    <script>
+        function toggleDay(element) {
+            const content = element.querySelector('.day-content');
+            const icon = element.querySelector('.expand-icon');
+
+            element.classList.toggle('expanded');
+
+            if (element.classList.contains('expanded')) {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                icon.textContent = '▲';
+            } else {
+                content.style.maxHeight = '0';
+                icon.textContent = '▼';
+            }
+        }
+    </script>
 </body>
 </html>

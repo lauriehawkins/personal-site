@@ -1,0 +1,27 @@
+{
+  "name": "personal-site",
+  "version": "1.0.0",
+  "description": "A simple multi-page personal website with sections for: - Home/Intro - Fitness - Nerd Stuff",
+  "main": "dark-mode.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bot": "node bot/laurie-bot.js",
+    "analyze": "node bot/analyze-messages.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lauriehawkins/personal-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/lauriehawkins/personal-site/issues"
+  },
+  "homepage": "https://github.com/lauriehawkins/personal-site#readme",
+  "dependencies": {
+    "discord.js": "^14.27.0",
+    "dotenv": "^17.4.2"
+  }
+}

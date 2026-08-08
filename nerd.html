@@ -3,27 +3,262 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nerd Stuff - Personal Site</title>
+    <title>Nerd Stuff - Laurie Hawkins</title>
+    <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
+            <li><a href="professional.html">Professional</a></li>
             <li><a href="fitness.html">Fitness</a></li>
             <li><a href="nerd.html" class="active">Nerd Stuff</a></li>
         </ul>
     </nav>
 
     <main>
-        <h1>Nerd Stuff</h1>
-        <section>
-            <p>This is where I'll share my tech projects, gaming adventures, and other nerdy interests.</p>
+        <div class="hero-nerd">
+            <h1>⚔️ The Kharon Reach Campaign</h1>
+            <p class="hero-subtitle">A Warhammer 40k Escalation League | Campaign Master & Player</p>
+        </div>
+
+        <section class="campaign-intro">
+            <div class="intro-text">
+                <h2>Something Beneath the Planet is Waking Up...</h2>
+                <p><em>"Kharon Reach was never meant to matter. An exhausted mining world on the edge of the Great Rift, its surface had long ago been stripped bare by industrial excavation. Acid oceans boiled beneath permanent ash storms, while the surviving population endured within refinery-habs and deep mining vaults carved into the planet's crust.</em></p>
+                <p><em>Then the disappearances began..."</em></p>
+            </div>
+        </section>
+
+        <section class="campaign-progression">
+            <h2>📍 Campaign Map Progression</h2>
+            <p class="section-intro">Watch the war escalate month by month as factions vie for control of Kharon Reach</p>
+
+            <div class="map-slideshow">
+                <div class="map-slide active">
+                    <div class="map-header">
+                        <h3>The Beginning</h3>
+                        <span class="map-date">June 2026 - 500pts</span>
+                    </div>
+                    <div class="map-container">
+                        <img src="images/map-start.png" alt="Campaign map at start">
+                    </div>
+                    <p class="map-description">The war begins. Iron Warriors establish positions around The Maw Below, while Tyranids spread from the sinkholes.</p>
+                </div>
+
+                <div class="map-slide">
+                    <div class="map-header">
+                        <h3>End of June</h3>
+                        <span class="map-date">June 2026 - 500pts</span>
+                    </div>
+                    <div class="map-container">
+                        <img src="images/map-june.png" alt="Campaign map end of June">
+                    </div>
+                    <p class="map-description">Territory changes hands. The Iron Warriors secure their foothold after the devastating 31-0 victory over the Tyranids.</p>
+                </div>
+
+                <div class="map-slide">
+                    <div class="map-header">
+                        <h3>July Update</h3>
+                        <span class="map-date">July 2026 - 500pts</span>
+                    </div>
+                    <div class="map-container">
+                        <img src="images/map-july.png" alt="Campaign map July">
+                    </div>
+                    <p class="map-description">"Slow July with only one game... August we move to 750pts and games planned at the outset."</p>
+                </div>
+
+                <div class="map-indicators">
+                    <span class="indicator active"></span>
+                    <span class="indicator"></span>
+                    <span class="indicator"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="hero-moment">
+            <div class="hero-spotlight">
+                <div class="hero-image">
+                    <img src="images/yann-last-stand.jpg" alt="Yann Ashenfury's last stand">
+                </div>
+                <div class="hero-story">
+                    <h2>🔥 Heroic Moment: Yann Ashenfury</h2>
+                    <h3>The Last Stand</h3>
+                    <p>In the heat of battle, surrounded by enemies, Yann Ashenfury made his final stand. Though he fell that day, his sacrifice would not be forgotten.</p>
+                    <div class="hero-fate">
+                        <span class="fate-icon">⚙️</span>
+                        <div class="fate-text">
+                            <strong>His Fate:</strong> Entombed in a Dreadnought
+                            <p>Even in death, Yann Ashenfury still serves. His broken body will be interred within the cold ceramite of a Dreadnought, his fury preserved for eternity.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="battle-highlights">
+            <h2>⚔️ Battle Highlights</h2>
+
+            <div class="highlight-card featured">
+                <div class="highlight-header">
+                    <h3>The Battle for Sector 26 – The Maw Below</h3>
+                    <div class="battle-tags">
+                        <span class="tag">Opening Engagement</span>
+                        <span class="tag">Iron Warriors Victory</span>
+                    </div>
+                </div>
+                <div class="battle-images">
+                    <img src="images/gargoyles-ambush.png" alt="Gargoyles ambushed">
+                </div>
+                <div class="battle-story">
+                    <p><strong>Mission:</strong> Take and Hold (Iron Warriors) vs Reconnaissance (Tyranids)</p>
+                    <p>The Iron Warriors formed disciplined gun lines and dared the Tyranids to attack. The opening salvo was devastating.</p>
+                    <blockquote>"A brood of Gargoyles attempting to seize the initiative was annihilated almost immediately, leaving the Tyranid advance blind and fragmented."</blockquote>
+                    <div class="battle-result-big">
+                        <div class="result-team winner">Iron Warriors</div>
+                        <div class="result-score">31 - 0</div>
+                        <div class="result-team loser">Tyranids</div>
+                    </div>
+                    <p class="battle-outcome"><em>"The engagement became little more than an execution. The Tyranids were almost completely annihilated, while the Iron Warriors remained firmly in control."</em></p>
+                </div>
+            </div>
+
+            <div class="highlight-card">
+                <div class="highlight-header">
+                    <h3>Intercepted Vox Transmission</h3>
+                    <div class="battle-tags">
+                        <span class="tag">Plot Twist</span>
+                        <span class="tag">Eldar Revealed</span>
+                    </div>
+                </div>
+                <div class="vox-transmission">
+                    <div class="transmission-header">
+                        <span>📡 INTERCEPTED VOX</span>
+                        <span>Iron Warriors Forward Unit</span>
+                    </div>
+                    <div class="transmission-body">
+                        <p><em>"Ironhold, this is Vossk-pattern relay three. We have contact.</em></p>
+                        <p><em>Initial auspex returns were false. Repeat: false.</em></p>
+                        <p><em>The force occupying the northern green zone is not Salamanders...</em></p>
+                        <p><strong>Eldar.</strong></p>
+                        <p><em>They have been wearing the signal-shadow of the XVIII Legion to mask their arrival. Every faction on this world has been watching for green armour and flame icons while the xenos dug themselves into the northern territories.</em></p>
+                        <p><em>Clever. Irritating.</em></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="highlight-card">
+                <div class="highlight-header">
+                    <h3>The Wolves Arrive</h3>
+                    <div class="battle-tags">
+                        <span class="tag">Space Wolves</span>
+                        <span class="tag">War Cry</span>
+                    </div>
+                </div>
+                <div class="war-cry">
+                    <p><em>"The Space Wolves will not tolerate the wanton destruction of brave Imperial citizens! And if we manage to hew many xenos and potentially recover lost artefacts before they fall into the hands of Chaos then what an Epic Saga t'will be!</em></p>
+                    <p class="howl"><strong>Howl my Brethren! For the Wolves of Fenris approach Kharon-Reach and let none stand in our way!</strong></p>
+                    <p class="arooo">AROOOOOOO!!!!</p>
+                    <div class="reaction-hearts">❤️ ❤️ ❤️</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="action-gallery">
+            <h2>📸 Action Shots & Paint Progress</h2>
+            <div class="action-grid">
+                <div class="action-item">
+                    <img src="images/battle-progress.jpg" alt="Battle in progress">
+                    <div class="action-caption">Battle in Progress</div>
+                </div>
+                <div class="action-item">
+                    <img src="images/focused-fire.png" alt="Focused fire">
+                    <div class="action-caption">"Fuck this guy in particular"</div>
+                </div>
+                <div class="action-item">
+                    <img src="images/paint-nearly-done.jpg" alt="Paint progress">
+                    <div class="action-caption">Nearly Done!</div>
+                </div>
+                <div class="action-item">
+                    <img src="images/paint-wip-heads.jpg" alt="WIP miniatures">
+                    <div class="action-caption">Heads Just Went On</div>
+                </div>
+                <div class="action-item">
+                    <img src="images/tyranid-wip.jpg" alt="Tyranid progress">
+                    <div class="action-caption">Tyranid WIP</div>
+                </div>
+                <div class="action-item">
+                    <img src="images/paint-session.jpg" alt="More paint progress">
+                    <div class="action-caption">Paint Session</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="campaign-stats-footer">
+            <h2>Campaign by the Numbers</h2>
+            <div class="stats-row">
+                <div class="stat-item">
+                    <span class="stat-big">521</span>
+                    <span class="stat-small">Total Messages</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-big">221</span>
+                    <span class="stat-small">Paint Progress Updates</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-big">44</span>
+                    <span class="stat-small">Battle Reports</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-big">120</span>
+                    <span class="stat-small">Images Shared</span>
+                </div>
+            </div>
+            <p class="community-note">A thriving community of painters, generals, and storytellers building an epic narrative campaign together.</p>
+        </section>
+
+        <section class="campaign-quote">
+            <blockquote class="epic-quote">
+                <p>"As larger armies descend upon Kharon Reach and the war escalates month by month, one truth becomes impossible to ignore:</p>
+                <p><strong>Something beneath the planet is waking up.</strong></p>
+            </blockquote>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Personal Site</p>
+        <p>&copy; 2026 Laurie Hawkins</p>
     </footer>
+
+    <button id="darkModeToggle" aria-label="Toggle dark mode">🌙</button>
+    <script src="dark-mode.js"></script>
+    <script>
+        // Campaign map slideshow
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.map-slide');
+        const indicators = document.querySelectorAll('.indicator');
+
+        function showSlide(n) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            indicators.forEach(indicator => indicator.classList.remove('active'));
+
+            currentSlide = (n + slides.length) % slides.length;
+
+            slides[currentSlide].classList.add('active');
+            indicators[currentSlide].classList.add('active');
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        // Auto-advance every 3 seconds
+        setInterval(nextSlide, 3000);
+
+        // Click indicators to jump to slide
+        indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => showSlide(index));
+        });
+    </script>
 </body>
 </html>

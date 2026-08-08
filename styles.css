@@ -9,6 +9,814 @@ body {
     line-height: 1.6;
     color: #333;
     background: #f4f4f4;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background: #1a1a2e;
+    color: #eee;
+}
+
+body.dark-mode nav {
+    background: #16213e;
+}
+
+body.dark-mode nav a {
+    color: #eee;
+}
+
+body.dark-mode nav a:hover,
+body.dark-mode nav a.active {
+    background: #0f3460;
+}
+
+body.dark-mode .hero,
+body.dark-mode section {
+    background: #16213e;
+    color: #eee;
+}
+
+body.dark-mode h1,
+body.dark-mode h2 {
+    color: #eee;
+}
+
+body.dark-mode footer {
+    background: #16213e;
+}
+
+body.dark-mode .expertise-card,
+body.dark-mode .timeline-content {
+    background: #0f3460;
+    color: #eee;
+}
+
+body.dark-mode .expertise-card h3,
+body.dark-mode .timeline-content h3 {
+    color: #eee;
+}
+
+body.dark-mode .timeline-company {
+    color: #bbb;
+}
+
+body.dark-mode .stat-card {
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.5);
+}
+
+#darkModeToggle {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    z-index: 1000;
+}
+
+#darkModeToggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+/* Fitness Page Styles */
+.hero-fitness {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    padding: 5rem 2rem;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 3rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.hero-fitness h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.achievements-section {
+    margin-bottom: 4rem;
+}
+
+.achievements-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.achievement-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.achievement-card {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(245, 87, 108, 0.3);
+    transition: transform 0.3s;
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px) scale(1.02);
+}
+
+.achievement-lift {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.achievement-progress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.achievement-arrow {
+    font-size: 1.5rem;
+}
+
+.achievement-old {
+    opacity: 0.8;
+}
+
+.achievement-new {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.achievement-gain {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-top: 1rem;
+    border-top: 2px solid rgba(255,255,255,0.3);
+}
+
+.program-section {
+    margin-bottom: 4rem;
+}
+
+.program-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.program-description {
+    text-align: center;
+    color: #7f8c8d;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.training-split {
+    display: grid;
+    gap: 2rem;
+}
+
+.training-day {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-left: 5px solid #f5576c;
+    transition: transform 0.3s;
+}
+
+.training-day:hover {
+    transform: translateX(5px);
+}
+
+.training-day.highlight {
+    border-left-color: #f093fb;
+    background: linear-gradient(to right, rgba(240, 147, 251, 0.1), white);
+}
+
+.day-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #f4f4f4;
+}
+
+.day-header h3 {
+    color: #2c3e50;
+    margin: 0;
+}
+
+.day-focus {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.main-lift {
+    margin-bottom: 1.5rem;
+}
+
+.lift-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.lift-progression {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+}
+
+.conditioning-info {
+    margin-bottom: 1.5rem;
+}
+
+.conditioning-info p {
+    margin: 0.5rem 0;
+}
+
+.conditioning-details {
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+.accessories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.accessory-label {
+    font-weight: 600;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+}
+
+.accessory-tag {
+    background: #f4f4f4;
+    color: #2c3e50;
+    padding: 0.4rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+}
+
+.stats-section {
+    margin-bottom: 4rem;
+}
+
+.stats-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.stat-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.stat-box:hover {
+    transform: translateY(-5px);
+}
+
+.stat-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f5576c;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+.progress-note {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(245, 87, 108, 0.3);
+}
+
+.progress-note h2 {
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.progress-note p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+/* Dark mode fitness styles */
+body.dark-mode .hero-fitness {
+    box-shadow: 0 10px 30px rgba(245, 87, 108, 0.4);
+}
+
+body.dark-mode .training-day {
+    background: #0f3460;
+}
+
+body.dark-mode .training-day.highlight {
+    background: linear-gradient(to right, rgba(240, 147, 251, 0.2), #0f3460);
+}
+
+body.dark-mode .day-header h3,
+body.dark-mode .lift-name {
+    color: #eee;
+}
+
+body.dark-mode .accessory-tag {
+    background: #16213e;
+    color: #eee;
+}
+
+body.dark-mode .stat-box {
+    background: #0f3460;
+}
+
+/* Nerd Page Styles */
+.hero-nerd {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: white;
+    padding: 5rem 2rem;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 3rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.hero-nerd h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.campaign-banner {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 3rem;
+    border-radius: 12px;
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.campaign-banner h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.campaign-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 2rem;
+}
+
+.campaign-lore {
+    background: rgba(255,255,255,0.1);
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid white;
+}
+
+.campaign-lore p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.server-stats {
+    margin-bottom: 4rem;
+}
+
+.server-stats h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.nerd-stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.nerd-stat-card {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(79, 172, 254, 0.3);
+    transition: transform 0.3s;
+}
+
+.nerd-stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.nerd-stat-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.nerd-stat-value {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.nerd-stat-label {
+    font-size: 0.9rem;
+    opacity: 0.95;
+}
+
+.channel-activity {
+    margin-bottom: 4rem;
+}
+
+.channel-activity h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.channel-bars {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.channel-bar {
+    margin-bottom: 1.5rem;
+}
+
+.channel-bar:last-child {
+    margin-bottom: 0;
+}
+
+.channel-name {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.bar-container {
+    background: #ecf0f1;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 30px;
+}
+
+.bar-fill {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 1rem;
+    color: white;
+    font-weight: 600;
+    transition: width 1s ease;
+}
+
+.battle-highlight {
+    margin-bottom: 4rem;
+}
+
+.battle-highlight h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.battle-report-card {
+    background: white;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-left: 5px solid #667eea;
+}
+
+.battle-report-card h3 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.battle-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.battle-tag {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.battle-report-card blockquote {
+    background: #f4f4f4;
+    padding: 1.5rem;
+    border-left: 4px solid #4facfe;
+    margin: 2rem 0;
+    font-style: italic;
+}
+
+.battle-result {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.battle-result .winner {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.battle-result .score {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.battle-footer {
+    color: #7f8c8d;
+    font-size: 0.95rem;
+    margin-top: 1.5rem;
+}
+
+.campaign-features {
+    margin-bottom: 4rem;
+}
+
+.campaign-features h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-top: 4px solid #4facfe;
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.faction-presence {
+    margin-bottom: 4rem;
+}
+
+.faction-presence h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.faction-list {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.faction-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    transition: transform 0.3s;
+}
+
+.faction-item:hover {
+    transform: translateX(5px);
+}
+
+.faction-icon {
+    font-size: 3rem;
+    flex-shrink: 0;
+}
+
+.faction-details h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.community-vibes {
+    margin-bottom: 4rem;
+}
+
+.community-vibes h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.vibes-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+}
+
+.vibe-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.vibe-card:hover {
+    transform: scale(1.05);
+}
+
+.vibe-emoji {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.vibe-count {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.vibe-label {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+.campaign-quote {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 4rem 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+.epic-quote {
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    font-style: italic;
+    margin: 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.epic-quote p {
+    margin-bottom: 1rem;
+}
+
+.epic-quote strong {
+    font-size: 1.8rem;
+}
+
+/* Dark mode nerd styles */
+body.dark-mode .hero-nerd,
+body.dark-mode .campaign-banner,
+body.dark-mode .campaign-quote {
+    box-shadow: 0 10px 30px rgba(79, 172, 254, 0.4);
+}
+
+body.dark-mode .channel-bars,
+body.dark-mode .battle-report-card,
+body.dark-mode .feature-card,
+body.dark-mode .faction-item,
+body.dark-mode .vibe-card {
+    background: #0f3460;
+    color: #eee;
+}
+
+body.dark-mode .channel-name,
+body.dark-mode .battle-report-card h3,
+body.dark-mode .feature-card h3,
+body.dark-mode .faction-details h3,
+body.dark-mode .vibe-count {
+    color: #eee;
+}
+
+body.dark-mode .battle-report-card blockquote {
+    background: #16213e;
+    color: #eee;
+}
+
+.hobby-gallery {
+    margin-bottom: 4rem;
+}
+
+.hobby-gallery h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.gallery-item {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-caption {
+    padding: 1rem;
+    text-align: center;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+body.dark-mode .gallery-item {
+    background: #0f3460;
+}
+
+body.dark-mode .gallery-caption {
+    color: #eee;
 }
 
 nav {
@@ -90,4 +898,997 @@ footer {
     text-align: center;
     padding: 1.5rem;
     margin-top: 2rem;
+}
+
+.hero-professional {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 6rem 2rem;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 3rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.hero-professional h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.hero-subtitle {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+.cta-button {
+    display: inline-block;
+    background: white;
+    color: #667eea;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.impact-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.stat-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    transition: transform 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    opacity: 0.95;
+}
+
+.expertise-grid {
+    margin-bottom: 4rem;
+}
+
+.expertise-grid h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.expertise-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.expertise-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+    border-left: 4px solid #667eea;
+}
+
+.expertise-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.expertise-card h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.journey-section {
+    margin-bottom: 4rem;
+}
+
+.journey-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 3rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -3rem;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #667eea;
+    border: 4px solid white;
+    box-shadow: 0 0 0 4px #667eea;
+}
+
+.timeline-marker.current {
+    background: #764ba2;
+    box-shadow: 0 0 0 4px #764ba2, 0 0 20px rgba(118, 75, 162, 0.5);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.timeline-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.timeline-date {
+    color: #667eea;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content h3 {
+    color: #2c3e50;
+    margin-bottom: 0.25rem;
+}
+
+.timeline-company {
+    color: #7f8c8d;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.timeline-highlights {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.highlight-tag {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.cta-section {
+    text-align: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 4rem 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+.cta-section h2 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* New Narrative Nerd Page Styles */
+.campaign-intro {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    padding: 4rem 2rem;
+    border-radius: 12px;
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 15px rgba(30, 60, 114, 0.3);
+}
+
+.intro-text h2 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.intro-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.campaign-progression {
+    margin-bottom: 4rem;
+}
+
+.campaign-progression h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.section-intro {
+    text-align: center;
+    color: #7f8c8d;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+}
+
+.map-timeline {
+    display: grid;
+    gap: 3rem;
+}
+
+.map-phase {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.map-header {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: white;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.map-header h3 {
+    color: white;
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.map-date {
+    background: rgba(255,255,255,0.2);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.map-container {
+    padding: 2rem;
+    background: #f8f9fa;
+}
+
+.map-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.map-description {
+    padding: 1.5rem 2rem;
+    font-style: italic;
+    color: #555;
+    border-top: 2px solid #ecf0f1;
+}
+
+.hero-moment {
+    margin-bottom: 4rem;
+}
+
+.hero-spotlight {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+}
+
+.hero-image {
+    height: 100%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-story {
+    padding: 3rem;
+    color: white;
+}
+
+.hero-story h2 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.hero-story h3 {
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-fate {
+    background: rgba(0,0,0,0.2);
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.fate-icon {
+    font-size: 3rem;
+}
+
+.fate-text strong {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.fate-text p {
+    margin-top: 0.5rem;
+    opacity: 0.95;
+}
+
+.battle-highlights {
+    margin-bottom: 4rem;
+}
+
+.battle-highlights h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.highlight-card {
+    background: white;
+    border-radius: 12px;
+    padding: 3rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.highlight-card.featured {
+    border-left: 5px solid #4facfe;
+}
+
+.highlight-header {
+    margin-bottom: 2rem;
+}
+
+.highlight-header h3 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.battle-tags {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.battle-images img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.battle-story blockquote {
+    background: #f4f4f4;
+    padding: 1.5rem;
+    border-left: 4px solid #4facfe;
+    margin: 2rem 0;
+    font-style: italic;
+}
+
+.battle-result-big {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 2rem;
+    border-radius: 12px;
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 2rem;
+    align-items: center;
+    color: white;
+}
+
+.result-team {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.result-team.winner {
+    font-size: 1.5rem;
+}
+
+.result-team.loser {
+    opacity: 0.7;
+}
+
+.result-score {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.battle-outcome {
+    color: #7f8c8d;
+    font-size: 0.95rem;
+    margin-top: 1.5rem;
+}
+
+.vox-transmission {
+    background: #1a1a2e;
+    color: #00ff00;
+    font-family: 'Courier New', monospace;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.transmission-header {
+    background: #0f3460;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+
+.transmission-body {
+    padding: 2rem;
+    line-height: 1.8;
+}
+
+.transmission-body strong {
+    color: #ff6b6b;
+    font-size: 1.5rem;
+}
+
+.war-cry {
+    background: linear-gradient(135deg, #434343 0%, #000000 100%);
+    color: #ecf0f1;
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 5px solid #ffa500;
+}
+
+.war-cry .howl {
+    color: #ffa500;
+    font-size: 1.3rem;
+    margin: 1.5rem 0;
+}
+
+.war-cry .arooo {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffa500;
+    margin: 1.5rem 0;
+}
+
+.reaction-hearts {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.action-gallery {
+    margin-bottom: 4rem;
+}
+
+.action-gallery h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.action-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.action-item {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.action-item:hover {
+    transform: translateY(-5px);
+}
+
+.action-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.action-caption {
+    padding: 1rem;
+    text-align: center;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.campaign-stats-footer {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.campaign-stats-footer h2 {
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.stats-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat-big {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.stat-small {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.community-note {
+    font-style: italic;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Dark mode for new narrative styles */
+body.dark-mode .campaign-intro {
+    box-shadow: 0 4px 15px rgba(30, 60, 114, 0.5);
+}
+
+body.dark-mode .map-phase,
+body.dark-mode .highlight-card,
+body.dark-mode .action-item {
+    background: #0f3460;
+    color: #eee;
+}
+
+body.dark-mode .map-container {
+    background: #16213e;
+}
+
+body.dark-mode .map-description {
+    color: #bbb;
+}
+
+body.dark-mode .highlight-header h3,
+body.dark-mode .action-caption {
+    color: #eee;
+}
+
+body.dark-mode .battle-story blockquote {
+    background: #16213e;
+    color: #eee;
+}
+
+body.dark-mode .hero-spotlight {
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.5);
+}
+
+@media (max-width: 768px) {
+    .hero-spotlight {
+        grid-template-columns: 1fr;
+    }
+    
+    .battle-result-big {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .result-score {
+        font-size: 2rem;
+    }
+}
+
+/* Campaign Map Slideshow */
+.map-slideshow {
+    position: relative;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.map-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    pointer-events: none;
+}
+
+.map-slide.active {
+    position: relative;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.map-slideshow {
+    position: relative;
+}
+
+.map-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: white;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ddd;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.indicator.active {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    transform: scale(1.3);
+}
+
+.indicator:hover {
+    background: #4facfe;
+}
+
+body.dark-mode .map-slideshow {
+    background: #0f3460;
+}
+
+body.dark-mode .map-indicators {
+    background: #0f3460;
+}
+
+body.dark-mode .indicator {
+    background: #16213e;
+}
+
+body.dark-mode .indicator.active {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+/* New Fitness Page - Program Focused */
+.week-selector {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.week-btn {
+    background: white;
+    border: 2px solid #f5576c;
+    color: #f5576c;
+    padding: 0.75rem 2rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.week-btn:hover {
+    background: #f5576c;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.week-btn.active {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    border-color: #f5576c;
+}
+
+.training-day {
+    background: white;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.training-day:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
+}
+
+.training-day.conditioning {
+    border-left: 5px solid #f093fb;
+}
+
+.day-header {
+    padding: 1.5rem 2rem;
+}
+
+.day-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.day-title h3 {
+    color: #2c3e50;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.expand-icon {
+    font-size: 1.2rem;
+    color: #f5576c;
+    transition: transform 0.3s;
+}
+
+.training-day.expanded .expand-icon {
+    transform: rotate(180deg);
+}
+
+.day-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    border-top: 1px solid #ecf0f1;
+}
+
+.main-lift-detail,
+.accessories-detail,
+.conditioning-detail {
+    padding: 2rem;
+}
+
+.main-lift-detail h4,
+.accessories-detail h4,
+.conditioning-detail h4 {
+    color: #f5576c;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.lift-sets {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #f5576c;
+}
+
+.set-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.set-row:last-child {
+    border-bottom: none;
+}
+
+.set-label {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.exercise-list {
+    list-style: none;
+    padding: 0;
+}
+
+.exercise-list li {
+    padding: 0.75rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+.exercise-list li:before {
+    content: "•";
+    color: #f5576c;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.exercise-list li:last-child {
+    border-bottom: none;
+}
+
+.circuit-format {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.conditioning-note {
+    margin-top: 1.5rem;
+    font-style: italic;
+    color: #7f8c8d;
+    text-align: center;
+}
+
+.achievements-compact {
+    margin-top: 4rem;
+}
+
+.achievements-compact h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.pr-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.pr-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.pr-lift {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin-bottom: 0.5rem;
+}
+
+.pr-value {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #f5576c;
+    margin-bottom: 0.5rem;
+}
+
+.pr-gain {
+    font-size: 0.9rem;
+    color: #2c3e50;
+}
+
+/* Dark mode fitness updates */
+body.dark-mode .week-btn {
+    background: #0f3460;
+    border-color: #f5576c;
+}
+
+body.dark-mode .week-btn:hover {
+    background: #f5576c;
+}
+
+body.dark-mode .training-day {
+    background: #0f3460;
+}
+
+body.dark-mode .day-title h3 {
+    color: #eee;
+}
+
+body.dark-mode .lift-sets {
+    background: #16213e;
+}
+
+body.dark-mode .set-label {
+    color: #eee;
+}
+
+body.dark-mode .exercise-list li {
+    border-bottom-color: #16213e;
+}
+
+body.dark-mode .pr-item {
+    background: #0f3460;
+}
+
+body.dark-mode .pr-lift,
+body.dark-mode .pr-gain {
+    color: #bbb;
+}
+
+.pump-day {
+    border-left-color: #f093fb;
+}
+
+.pump-circuit-detail h4 {
+    color: #f093fb;
 }

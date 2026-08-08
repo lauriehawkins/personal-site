@@ -34,9 +34,29 @@ The **Nerd Stuff** section can be updated either manually or via Discord bot exp
 - Edit the PRs section in `fitness.html` manually, or
 - Tell Claude the new PR values (Squat, Bench, Deadlift)
 
-**To update photos:**
-- Home photos: Add to `images/home/` and update `home-photos.js`
-- Other images: Add to appropriate `images/` subdirectory
+**To add photos to Home page:**
+
+Option A (easiest):
+1. Add photo files to `images/home/`
+2. Tell Claude: "I added X new photos" (with optional descriptions)
+3. Claude will categorize them and update `home-photos.js`
+
+Option B (faster):
+1. Add photo files to `images/home/`
+2. Tell Claude which category each photo belongs to:
+   - **cola** - Photos featuring Cola
+   - **travel** - Travel/vacation photos
+   - **outdoors** - Hiking, outdoor activities
+   - **people** - Group photos, social events
+   - **landscapes** - Scenic views, nature
+   - **fitness** - Gym, training, competitions
+   - **candid** - Casual everyday moments
+3. Claude updates `home-photos.js` and commits
+
+The Home page randomly selects different photos on each visit (no duplicates per visit).
+
+**Other images:**
+- Add to appropriate `images/` subdirectory and reference in HTML
 
 ### Books Section
 

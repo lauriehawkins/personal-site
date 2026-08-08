@@ -48,6 +48,33 @@ Discord bot to fetch and analyze messages from your personal server.
 - Analysis: `bot/data/analysis.json`
 - Games & Results content will be specially extracted for the nerd page
 
+## Interactive Export Bot
+
+**For live Discord integration**, use `export-bot.js` which responds to commands:
+
+```bash
+node bot/export-bot.js
+```
+
+This runs a persistent bot that listens for the command:
+
+```
+!export-nerd-content
+```
+
+When you type this command in any Discord channel, the bot will:
+1. Scan all relevant channels (battle-reports, campaign-map-updates, paint-progress, etc.)
+2. Generate a structured JSON export
+3. Upload it as a file attachment
+4. Provide a preview summary
+
+**To update the Nerd Stuff page:**
+1. Run `node bot/export-bot.js` (keep it running)
+2. In Discord, type `!export-nerd-content`
+3. Download the JSON file
+4. Paste it into Claude Code and say "Here's this month's Nerd update"
+5. Claude will integrate new content into `nerd.html`
+
 ## Next Steps
 
 Once you've run the bot, we'll use the data to build an awesome nerd page showcasing your gaming highlights, top moments, and server activity!

@@ -54,6 +54,7 @@ The Nerd Stuff page can be updated via Discord bot export to avoid manual HTML e
 - Adding new battle reports
 - Updating server stats
 - Downloading and integrating new images
+- **Adding new campaign maps to the existing slideshow** (maintains auto-rotation)
 - Maintaining existing layout and style
 - Committing and pushing changes
 
@@ -99,6 +100,7 @@ The bot should implement `!export-nerd-content` that outputs:
       "description": "Map showing Imperial advance on southern continent"
     }
   ],
+  "note": "New campaign maps are automatically added to the existing map slideshow, which rotates through all phases showing progression over time",
   "hobbyShowcase": [
     {
       "title": "Painted Hive Tyrant",
@@ -216,6 +218,46 @@ Find the stats section and update numbers:
 
 1. Add image file to `images/nerd/`
 2. Reference in HTML: `<img src="images/nerd/filename.jpg" alt="description">`
+
+### Adding Campaign Maps to Slideshow
+
+The Nerd Stuff page has an **auto-rotating campaign map slideshow** showing progression over time.
+
+When a new campaign map is added:
+
+1. Download image to `images/nerd/` (e.g., `kharon-phase4.jpg`)
+2. Find the `.map-slideshow` section in `nerd.html`
+3. Add a new slide:
+
+```html
+<div class="map-slide">
+    <div class="map-header">
+        <h3>Phase 4: Title</h3>
+        <span class="map-date">Date</span>
+    </div>
+    <div class="map-container">
+        <img src="images/nerd/kharon-phase4.jpg" alt="Campaign map phase 4">
+    </div>
+    <div class="map-description">
+        Description of what changed in this phase...
+    </div>
+</div>
+```
+
+4. Add indicator dot:
+
+```html
+<div class="map-indicators">
+    <span class="indicator"></span>
+    <span class="indicator"></span>
+    <span class="indicator"></span>
+    <span class="indicator active"></span> <!-- New map is active -->
+</div>
+```
+
+**The slideshow automatically rotates** through all phases, showing campaign progression over time.
+
+**When using Discord bot export:** New campaign maps in the export are automatically added to this slideshow structure, maintaining the auto-rotation behavior.
 
 ---
 

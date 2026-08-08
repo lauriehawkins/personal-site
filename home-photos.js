@@ -86,10 +86,10 @@ const photoLibrary = {
 
 // Layout slots define what type of photo should go in each position
 const photoSlots = [
-    { id: 'cola-hero', categories: ['cola'], aspect: 'portrait', size: 'large', caption: 'This is Cola. He\'s in charge.' },
+    { id: 'cola-hero', categories: ['cola'], aspect: 'portrait', size: 'large' },
     { id: 'travel-wide', categories: ['travel', 'landscapes'], aspect: 'landscape', size: 'wide' },
     { id: 'cola-small', categories: ['cola'], aspect: 'portrait', size: 'medium' },
-    { id: 'hiking-moment', categories: ['outdoors', 'people'], aspect: 'portrait', size: 'large', text: 'Spending time outdoors, usually with a dog who thinks every walk is a multi-day expedition.' },
+    { id: 'hiking-moment', categories: ['outdoors', 'people'], aspect: 'portrait', size: 'large' },
     { id: 'landscape', categories: ['landscapes', 'outdoors', 'travel'], aspect: 'landscape', size: 'wide' },
     { id: 'fitness-photo', categories: ['fitness', 'people'], aspect: 'portrait', size: 'medium' },
     { id: 'group-shot', categories: ['people'], aspect: 'portrait', size: 'large' },

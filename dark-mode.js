@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const darkModeToggle = document.getElementById('darkModeToggle');
     const body = document.body;
 
-    // Check for saved preference or default to light mode
-    const currentTheme = localStorage.getItem('theme') || 'light';
+    // Check for saved preference or default to dark mode
+    const currentTheme = localStorage.getItem('theme') || 'dark';
     body.classList.add(currentTheme + '-mode');
     updateToggleButton(currentTheme === 'dark');
 

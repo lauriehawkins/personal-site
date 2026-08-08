@@ -9,6 +9,13 @@
     <link rel="stylesheet" href="home.css">
 </head>
 <body>
+    <script>
+        // Apply theme immediately to prevent flash
+        (function() {
+            const theme = localStorage.getItem('theme') || 'dark';
+            document.body.classList.add(theme + '-mode');
+        })();
+    </script>
     <nav>
         <ul>
             <li><a href="index.html" class="active" aria-current="page">Home</a></li>

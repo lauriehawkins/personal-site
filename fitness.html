@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <script>
+        // Apply theme immediately to prevent flash
+        (function() {
+            const theme = localStorage.getItem('theme') || 'dark';
+            document.body.classList.add(theme + '-mode');
+        })();
+    </script>
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -19,19 +26,12 @@
 
     <main>
         <div class="hero-fitness">
-            <h1>Current Training Program</h1>
-            <p class="hero-subtitle">Week 3 - 5 Day Split</p>
-            <p class="hero-subtitle">Plus mountain biking, hiking, and trying to learn to ski.</p>
+            <h1>What I'm Training</h1>
+            <p class="hero-subtitle">5 sessions</p>
+            <p class="hero-subtitle">Plus mountain biking, hiking, learning to ski, the occasional parkrun, and running with the dog.</p>
         </div>
 
         <section class="program-section">
-            <div class="week-selector">
-                <button class="week-btn">Week 1</button>
-                <button class="week-btn">Week 2</button>
-                <button class="week-btn active">Week 3</button>
-                <button class="week-btn">Week 4</button>
-            </div>
-
             <div class="training-split">
                 <div class="training-day" onclick="toggleDay(this)">
                     <div class="day-header">

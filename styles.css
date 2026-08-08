@@ -116,7 +116,7 @@ body.dark-mode .timeline-company {
 }
 
 body.dark-mode .stat-card {
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.5);
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.5);
 }
 
 #darkModeToggle {
@@ -142,7 +142,7 @@ body.dark-mode .stat-card {
 
 /* Fitness Page Styles */
 .hero-fitness {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    background: linear-gradient(135deg, #0B0B45 0%, #1a1a5e 50%, #CC5500 100%);
     color: white;
     padding: 5rem 2rem;
     text-align: center;
@@ -175,12 +175,12 @@ body.dark-mode .stat-card {
 }
 
 .achievement-card {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    background: linear-gradient(135deg, #0B0B45 0%, #CC5500 100%);
     color: white;
     padding: 2rem;
     border-radius: 12px;
     text-align: center;
-    box-shadow: 0 4px 15px rgba(245, 87, 108, 0.3);
+    box-shadow: 0 4px 15px rgba(204, 85, 0, 0.3);
     transition: transform 0.3s;
 }
 
@@ -250,7 +250,7 @@ body.dark-mode .stat-card {
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    border-left: 5px solid #f5576c;
+    border-left: 5px solid #CC5500;
     transition: transform 0.3s;
 }
 
@@ -259,8 +259,8 @@ body.dark-mode .stat-card {
 }
 
 .training-day.highlight {
-    border-left-color: #f093fb;
-    background: linear-gradient(to right, rgba(240, 147, 251, 0.1), white);
+    border-left-color: #CC5500;
+    background: linear-gradient(to right, rgba(204, 85, 0, 0.1), white);
 }
 
 .day-header {
@@ -278,7 +278,7 @@ body.dark-mode .stat-card {
 }
 
 .day-focus {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    background: linear-gradient(135deg, #0B0B45 0%, #CC5500 100%);
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 20px;
@@ -374,7 +374,7 @@ body.dark-mode .stat-card {
 .stat-value {
     font-size: 2rem;
     font-weight: bold;
-    color: #f5576c;
+    color: #CC5500;
     margin-bottom: 0.5rem;
 }
 
@@ -384,11 +384,11 @@ body.dark-mode .stat-card {
 }
 
 .progress-note {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    background: linear-gradient(135deg, #0B0B45 0%, #CC5500 100%);
     color: white;
     padding: 3rem;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(245, 87, 108, 0.3);
+    box-shadow: 0 4px 15px rgba(204, 85, 0, 0.3);
 }
 
 .progress-note h2 {
@@ -404,7 +404,7 @@ body.dark-mode .stat-card {
 
 /* Dark mode fitness styles */
 body.dark-mode .hero-fitness {
-    box-shadow: 0 10px 30px rgba(245, 87, 108, 0.4);
+    box-shadow: 0 10px 30px rgba(204, 85, 0, 0.4);
 }
 
 body.dark-mode .training-day {
@@ -431,8 +431,8 @@ body.dark-mode .stat-box {
 
 /* Nerd Page Styles */
 .hero-nerd {
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-    color: white;
+    background: linear-gradient(135deg, #081B2A 0%, #0E3A4A 50%, #1D6A7A 100%);
+    color: #E7E2D6;
     padding: 5rem 2rem;
     text-align: center;
     border-radius: 8px;
@@ -443,7 +443,7 @@ body.dark-mode .stat-box {
 .hero-nerd h1 {
     font-size: 3.5rem;
     margin-bottom: 1rem;
-    color: white;
+    color: #E7E2D6;
 }
 
 .campaign-banner {
@@ -497,12 +497,12 @@ body.dark-mode .stat-box {
 }
 
 .nerd-stat-card {
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-    color: white;
+    background: linear-gradient(135deg, #0E3A4A 0%, #1D6A7A 100%);
+    color: #E7E2D6;
     padding: 2rem;
     border-radius: 12px;
     text-align: center;
-    box-shadow: 0 4px 15px rgba(79, 172, 254, 0.3);
+    box-shadow: 0 4px 15px rgba(29, 106, 122, 0.3);
     transition: transform 0.3s;
 }
 
@@ -565,13 +565,13 @@ body.dark-mode .stat-box {
 }
 
 .bar-fill {
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    background: linear-gradient(135deg, #0E3A4A 0%, #1D6A7A 100%);
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     padding-right: 1rem;
-    color: white;
+    color: #E7E2D6;
     font-weight: 600;
     transition: width 1s ease;
 }
@@ -617,7 +617,7 @@ body.dark-mode .stat-box {
 .battle-report-card blockquote {
     background: #f4f4f4;
     padding: 1.5rem;
-    border-left: 4px solid #4facfe;
+    border-left: 4px solid #1D6A7A;
     margin: 2rem 0;
     font-style: italic;
 }
@@ -669,7 +669,7 @@ body.dark-mode .stat-box {
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    border-top: 4px solid #4facfe;
+    border-top: 4px solid #1D6A7A;
     transition: transform 0.3s;
 }
 
@@ -797,7 +797,7 @@ body.dark-mode .stat-box {
 body.dark-mode .hero-nerd,
 body.dark-mode .campaign-banner,
 body.dark-mode .campaign-quote {
-    box-shadow: 0 10px 30px rgba(79, 172, 254, 0.4);
+    box-shadow: 0 10px 30px rgba(29, 106, 122, 0.3);
 }
 
 body.dark-mode .channel-bars,
@@ -956,9 +956,9 @@ footer {
 }
 
 .hero-professional {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 6rem 2rem;
+    background: linear-gradient(135deg, #16213e 0%, #1E1B4B 70%, #6366F1 100%);
+    color: #F3F0FF;
+    padding: 4.25rem 2rem;
     text-align: center;
     border-radius: 8px;
     margin-bottom: 3rem;
@@ -968,7 +968,7 @@ footer {
 .hero-professional h1 {
     font-size: 3.5rem;
     margin-bottom: 1rem;
-    color: white;
+    color: #F3F0FF;
 }
 
 .hero-subtitle {
@@ -980,7 +980,7 @@ footer {
 .cta-button {
     display: inline-block;
     background: white;
-    color: #667eea;
+    color: #6366F1;
     padding: 1rem 2.5rem;
     border-radius: 50px;
     text-decoration: none;
@@ -1002,12 +1002,12 @@ footer {
 }
 
 .stat-card {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: linear-gradient(135deg, #1E1B4B 0%, #6366F1 100%);
+    color: #F3F0FF;
     padding: 2rem;
     border-radius: 12px;
     text-align: center;
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
     transition: transform 0.3s;
 }
 
@@ -1048,7 +1048,7 @@ footer {
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     transition: all 0.3s;
-    border-left: 4px solid #667eea;
+    border-left: 4px solid #6366F1;
 }
 
 .expertise-card:hover {
@@ -1084,7 +1084,7 @@ footer {
     top: 0;
     bottom: 0;
     width: 3px;
-    background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(180deg, #6366F1 0%, #8B5CF6 100%);
 }
 
 .timeline-item {
@@ -1099,14 +1099,14 @@ footer {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: #667eea;
+    background: #6366F1;
     border: 4px solid white;
-    box-shadow: 0 0 0 4px #667eea;
+    box-shadow: 0 0 0 4px #6366F1;
 }
 
 .timeline-marker.current {
-    background: #764ba2;
-    box-shadow: 0 0 0 4px #764ba2, 0 0 20px rgba(118, 75, 162, 0.5);
+    background: #8B5CF6;
+    box-shadow: 0 0 0 4px #8B5CF6, 0 0 20px rgba(139, 92, 246, 0.5);
     animation: pulse 2s infinite;
 }
 
@@ -1127,7 +1127,7 @@ footer {
 }
 
 .timeline-date {
-    color: #667eea;
+    color: #6366F1;
     font-weight: 600;
     font-size: 0.9rem;
     margin-bottom: 0.5rem;
@@ -1152,8 +1152,8 @@ footer {
 }
 
 .highlight-tag {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%);
+    color: #F3F0FF;
     padding: 0.25rem 0.75rem;
     border-radius: 20px;
     font-size: 0.85rem;
@@ -1162,15 +1162,15 @@ footer {
 
 .cta-section {
     text-align: center;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: linear-gradient(135deg, #1E1B4B 0%, #6366F1 100%);
+    color: #F3F0FF;
     padding: 4rem 2rem;
     border-radius: 12px;
     margin-bottom: 2rem;
 }
 
 .cta-section h2 {
-    color: white;
+    color: #F3F0FF;
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
@@ -1233,8 +1233,8 @@ footer {
 }
 
 .map-header {
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-    color: white;
+    background: linear-gradient(135deg, #0E3A4A 0%, #1D6A7A 100%);
+    color: #E7E2D6;
     padding: 1.5rem 2rem;
     display: flex;
     justify-content: space-between;
@@ -1242,7 +1242,7 @@ footer {
 }
 
 .map-header h3 {
-    color: white;
+    color: #E7E2D6;
     margin: 0;
     font-size: 1.8rem;
 }
@@ -1357,7 +1357,7 @@ footer {
 }
 
 .highlight-card.featured {
-    border-left: 5px solid #4facfe;
+    border-left: 5px solid #1D6A7A;
 }
 
 .highlight-header {
@@ -1377,8 +1377,8 @@ footer {
 }
 
 .tag {
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-    color: white;
+    background: linear-gradient(135deg, #0E3A4A 0%, #1D6A7A 100%);
+    color: #E7E2D6;
     padding: 0.5rem 1rem;
     border-radius: 20px;
     font-size: 0.85rem;
@@ -1394,7 +1394,7 @@ footer {
 .battle-story blockquote {
     background: #f4f4f4;
     padding: 1.5rem;
-    border-left: 4px solid #4facfe;
+    border-left: 4px solid #1D6A7A;
     margin: 2rem 0;
     font-style: italic;
 }
@@ -1673,12 +1673,12 @@ body.dark-mode .hero-spotlight {
 }
 
 .indicator.active {
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    background: linear-gradient(135deg, #0E3A4A 0%, #1D6A7A 100%);
     transform: scale(1.3);
 }
 
 .indicator:hover {
-    background: #4facfe;
+    background: #1D6A7A;
 }
 
 body.dark-mode .map-slideshow {
@@ -1694,40 +1694,21 @@ body.dark-mode .indicator {
 }
 
 body.dark-mode .indicator.active {
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    background: linear-gradient(135deg, #0E3A4A 0%, #1D6A7A 100%);
 }
 
 /* New Fitness Page - Program Focused */
-.week-selector {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+.current-block-indicator {
+    text-align: center;
     margin-bottom: 2rem;
-    flex-wrap: wrap;
 }
 
-.week-btn {
-    background: white;
-    border: 2px solid #f5576c;
-    color: #f5576c;
-    padding: 0.75rem 2rem;
-    border-radius: 25px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-.week-btn:hover {
-    background: #f5576c;
-    color: white;
-    transform: translateY(-2px);
-}
-
-.week-btn.active {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-    color: white;
-    border-color: #f5576c;
+.block-label {
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #CC5500;
+    text-transform: uppercase;
 }
 
 .training-day {
@@ -1745,7 +1726,7 @@ body.dark-mode .indicator.active {
 }
 
 .training-day.conditioning {
-    border-left: 5px solid #f093fb;
+    border-left: 5px solid #CC5500;
 }
 
 .day-header {
@@ -1766,7 +1747,7 @@ body.dark-mode .indicator.active {
 
 .expand-icon {
     font-size: 1.2rem;
-    color: #f5576c;
+    color: #CC5500;
     transition: transform 0.3s;
 }
 
@@ -1790,7 +1771,7 @@ body.dark-mode .indicator.active {
 .main-lift-detail h4,
 .accessories-detail h4,
 .conditioning-detail h4 {
-    color: #f5576c;
+    color: #CC5500;
     margin-bottom: 1rem;
     font-size: 1.2rem;
 }
@@ -1799,7 +1780,7 @@ body.dark-mode .indicator.active {
     background: #f8f9fa;
     padding: 1.5rem;
     border-radius: 8px;
-    border-left: 4px solid #f5576c;
+    border-left: 4px solid #CC5500;
 }
 
 .set-row {
@@ -1832,7 +1813,7 @@ body.dark-mode .indicator.active {
 
 .exercise-list li:before {
     content: "•";
-    color: #f5576c;
+    color: #CC5500;
     font-weight: bold;
     position: absolute;
     left: 0;
@@ -1843,7 +1824,7 @@ body.dark-mode .indicator.active {
 }
 
 .circuit-format {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    background: linear-gradient(135deg, #0B0B45 0%, #CC5500 100%);
     color: white;
     padding: 1rem;
     border-radius: 8px;
@@ -1892,7 +1873,7 @@ body.dark-mode .indicator.active {
 .pr-value {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #f5576c;
+    color: #CC5500;
     margin-bottom: 0.5rem;
 }
 
@@ -1902,13 +1883,8 @@ body.dark-mode .indicator.active {
 }
 
 /* Dark mode fitness updates */
-body.dark-mode .week-btn {
-    background: #0f3460;
-    border-color: #f5576c;
-}
-
-body.dark-mode .week-btn:hover {
-    background: #f5576c;
+body.dark-mode .block-label {
+    color: #e67300;
 }
 
 body.dark-mode .training-day {
@@ -1941,9 +1917,9 @@ body.dark-mode .pr-gain {
 }
 
 .pump-day {
-    border-left-color: #f093fb;
+    border-left-color: #CC5500;
 }
 
 .pump-circuit-detail h4 {
-    color: #f093fb;
+    color: #CC5500;
 }

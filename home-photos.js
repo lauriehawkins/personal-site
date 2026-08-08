@@ -51,7 +51,6 @@ const photoLibrary = {
         'PXL_20240818_153334452.PORTRAIT.jpg',
         'PXL_20250807_085539810.jpg',
         'PXL_20250807_085806261.MP.jpg',
-        'PXL_20250822_151641134.jpg',
         'PXL_20260426_112108571.jpg',
         'PXL_20260426_112109496.jpg',
         'PXL_20260426_113916149.MP.jpg',
@@ -195,7 +194,7 @@ function applyPhotos() {
         const element = document.getElementById(slotId);
         if (!element) return;
 
-        const img = element.querySelector('.story-img');
+        const img = element.querySelector('[data-dynamic-photo]');
         if (img) {
             const imgSrc = `images/home/${data.photo}`;
 
@@ -205,6 +204,7 @@ function applyPhotos() {
                 // Keep the placeholder/fallback visible
             };
 
+            // Set src and alt - this triggers the image load
             img.src = imgSrc;
             img.alt = data.caption || 'Photo from Laurie\'s life';
 
@@ -220,6 +220,9 @@ function applyPhotos() {
             if (slotIndex > 2) {
                 img.loading = 'lazy';
             }
+
+            // Remove data attribute after processing
+            img.removeAttribute('data-dynamic-photo');
         }
 
         // Update caption if present

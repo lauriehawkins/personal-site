@@ -813,7 +813,6 @@ body.dark-mode .cta-btn.secondary {
     .impact-card.small {
         grid-column: span 1;
     }
-}
 
     .story-flow {
         grid-template-columns: 1fr;

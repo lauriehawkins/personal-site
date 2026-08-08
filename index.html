@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Site</title>
+    <title>Laurie Hawkins</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="home.css">
 </head>
 <body>
     <nav>
@@ -14,26 +15,117 @@
             <li><a href="professional.html">Professional</a></li>
             <li><a href="fitness.html">Fitness</a></li>
             <li><a href="nerd.html">Nerd Stuff</a></li>
+            <li><a href="books.html">Books</a></li>
         </ul>
     </nav>
 
-    <main>
-        <div class="hero">
-            <h1>Welcome</h1>
-            <p>This is my personal space on the web</p>
-        </div>
+    <main class="home-main">
+        <!-- Hero -->
+        <section class="home-hero">
+            <h1>Hi, I'm Laurie.</h1>
+            <p class="home-intro">I lead engineering teams, lift heavy things, spend far too much time thinking about Warhammer, travel whenever I get the chance, and have a dog who's considerably more photogenic than I am.</p>
+        </section>
 
-        <section class="intro">
-            <h2>About Me</h2>
-            <p>Welcome to my personal site! Here you'll find my thoughts on fitness and various nerdy interests.</p>
+        <!-- Photo Story Grid -->
+        <section class="photo-story">
+            <!-- Cola hero -->
+            <div id="cola-hero" class="story-block cola-hero">
+                <img src="images/home/cola-sleeping.jpg" alt="Cola" class="story-img large">
+                <p class="photo-caption">This is Cola. He's in charge.</p>
+            </div>
+
+            <!-- Travel moment -->
+            <div id="travel-wide" class="story-block travel-wide">
+                <img src="images/home/italy.jpg" alt="Travel" class="story-img wide">
+            </div>
+
+            <!-- Quick Cola candid -->
+            <div id="cola-small" class="story-block cola-small">
+                <img src="images/home/cola-portrait.jpg" alt="Cola" class="story-img medium">
+            </div>
+
+            <!-- Hiking + outdoors intro -->
+            <div id="hiking-moment" class="story-block hiking-moment">
+                <img src="images/home/cola-hiking.jpg" alt="Hiking" class="story-img large">
+                <div class="story-text">
+                    <p>Spending time outdoors, usually with a dog who thinks every walk is a multi-day expedition.</p>
+                </div>
+            </div>
+
+            <!-- Landscape -->
+            <div id="landscape" class="story-block landscape">
+                <img src="images/home/mountain-view.jpg" alt="Landscape" class="story-img wide">
+            </div>
+
+            <!-- Fitness section intro -->
+            <div class="story-block fitness-lead">
+                <div id="fitness-photo" class="fitness-photo-slot">
+                    <img src="images/home/trophy.jpg" alt="Fitness" class="story-img medium">
+                </div>
+                <div class="section-link-card fitness-card">
+                    <h2>Fitness</h2>
+                    <p>Strongman, CrossFit, mountain biking, trying to learn to ski, and generally picking up things that are unnecessarily heavy.</p>
+                    <a href="fitness.html" class="story-link">See what I'm lifting →</a>
+                </div>
+            </div>
+
+            <!-- Group moment -->
+            <div id="group-shot" class="story-block group-shot">
+                <img src="images/home/group-event.jpg" alt="People" class="story-img large">
+            </div>
+
+            <!-- Professional section intro -->
+            <div class="story-block professional-lead">
+                <div class="section-link-card professional-card">
+                    <h2>Professional</h2>
+                    <p>Engineering leadership, Platform Engineering, cloud, security, AI and the slightly unusual route I took getting here.</p>
+                    <a href="professional.html" class="story-link">See my work →</a>
+                </div>
+                <div id="professional-photo" class="professional-photo-slot">
+                    <img src="images/home/asia-landscape.jpg" alt="Travel" class="story-img medium">
+                </div>
+            </div>
+
+            <!-- Travel collage -->
+            <div class="story-block travel-pair">
+                <div id="travel-pair-1">
+                    <img src="images/home/netherlands.jpg" alt="Travel" class="story-img small">
+                </div>
+                <div id="travel-pair-2">
+                    <img src="images/home/waterfall.jpg" alt="Outdoors" class="story-img small">
+                </div>
+            </div>
+
+            <!-- Nerd section intro -->
+            <div class="story-block nerd-lead">
+                <div class="section-link-card nerd-card">
+                    <h2>Nerd Stuff</h2>
+                    <p>Warhammer, tabletop RPGs, campaign building and other things that have a tendency to become significantly more elaborate than originally intended.</p>
+                    <a href="nerd.html" class="story-link">Dive into the hobby →</a>
+                </div>
+            </div>
+
+            <!-- Final Cola moment -->
+            <div id="cola-cosy" class="story-block cola-cosy">
+                <img src="images/home/cosy-cola.jpg" alt="Cola" class="story-img medium">
+                <p class="photo-caption">Told you he was photogenic.</p>
+            </div>
+
+        </section>
+
+        <!-- Footer CTA -->
+        <section class="home-footer">
+            <p>There's more to a person than their CV.</p>
+            <p class="footer-secondary">Explore the rest of the site to see what I'm up to.</p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Personal Site</p>
+        <p>&copy; 2026 Laurie Hawkins</p>
     </footer>
 
     <button id="darkModeToggle" aria-label="Toggle dark mode">🌙</button>
     <script src="dark-mode.js"></script>
+    <script src="home-photos.js"></script>
 </body>
 </html>

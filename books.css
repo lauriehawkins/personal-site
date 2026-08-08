@@ -1,0 +1,237 @@
+/* Books Section Styles */
+
+.books-hero {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 5rem 2rem 3rem;
+    text-align: center;
+}
+
+.books-hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.books-subtitle {
+    font-size: 1.15rem;
+    color: #777;
+    font-style: italic;
+}
+
+/* Bookshelf Layout */
+.bookshelf {
+    max-width: 1400px;
+    margin: 3rem auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 2rem;
+    row-gap: 3rem;
+    justify-items: center;
+    align-items: end;
+}
+
+/* Book Cards */
+.book {
+    position: relative;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.15));
+}
+
+.book:hover {
+    transform: translateY(-12px) scale(1.05) rotate(0deg) !important;
+    filter: drop-shadow(0 12px 30px rgba(0, 0, 0, 0.25));
+    z-index: 100;
+}
+
+/* Book Sizes */
+.book.small {
+    width: 140px;
+}
+
+.book.medium {
+    width: 160px;
+}
+
+.book.large {
+    width: 180px;
+}
+
+.book.featured {
+    width: 200px;
+}
+
+/* Rotation Classes */
+.book.rotate-left {
+    transform: rotate(-2deg);
+}
+
+.book.rotate-right {
+    transform: rotate(2deg);
+}
+
+/* Book Cover */
+.book-cover {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    background-size: cover;
+    background-position: center;
+    background-color: #2a2a2a;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+}
+
+.book-cover::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg,
+        rgba(255,255,255,0.1) 0%,
+        transparent 50%,
+        rgba(0,0,0,0.2) 100%);
+    pointer-events: none;
+}
+
+/* Book Info Overlay */
+.book-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top,
+        rgba(0, 0, 0, 0.95) 0%,
+        rgba(0, 0, 0, 0.85) 70%,
+        transparent 100%);
+    padding: 3rem 1rem 1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.book:hover .book-info {
+    opacity: 1;
+}
+
+.book-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0.25rem;
+    line-height: 1.3;
+}
+
+.book-author {
+    font-size: 0.85rem;
+    color: #ccc;
+    font-style: italic;
+}
+
+/* Dark Mode */
+body.dark-mode .books-hero h1 {
+    color: #eee;
+}
+
+body.dark-mode .books-subtitle {
+    color: #999;
+}
+
+body.dark-mode .book-cover {
+    background-color: #1a1a1a;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .bookshelf {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 1.5rem;
+        row-gap: 2.5rem;
+    }
+
+    .book.small {
+        width: 120px;
+    }
+
+    .book.medium {
+        width: 140px;
+    }
+
+    .book.large {
+        width: 160px;
+    }
+
+    .book.featured {
+        width: 180px;
+    }
+
+    .books-hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .books-hero {
+        padding: 4rem 1.5rem 2rem;
+    }
+
+    .books-hero h1 {
+        font-size: 2rem;
+    }
+
+    .books-subtitle {
+        font-size: 1rem;
+    }
+
+    .bookshelf {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 1.25rem;
+        row-gap: 2rem;
+        padding: 1rem;
+    }
+
+    .book.small {
+        width: 100px;
+    }
+
+    .book.medium {
+        width: 110px;
+    }
+
+    .book.large {
+        width: 120px;
+    }
+
+    .book.featured {
+        width: 130px;
+    }
+
+    /* Reduce rotations on mobile for easier tapping */
+    .book.rotate-left {
+        transform: rotate(-1deg);
+    }
+
+    .book.rotate-right {
+        transform: rotate(1deg);
+    }
+
+    /* Make info always visible on mobile (no hover state) */
+    .book-info {
+        opacity: 0;
+    }
+
+    .book:active .book-info {
+        opacity: 1;
+    }
+
+    .book-title {
+        font-size: 0.85rem;
+    }
+
+    .book-author {
+        font-size: 0.75rem;
+    }
+}

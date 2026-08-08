@@ -1,0 +1,392 @@
+/* Home Page Styles */
+
+.home-main {
+    max-width: 100%;
+    padding: 0;
+}
+
+/* Hero Section */
+.home-hero {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 6rem 2rem 4rem;
+    text-align: center;
+}
+
+.home-hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+}
+
+.home-intro {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Photo Story Grid */
+.photo-story {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2rem;
+    row-gap: 4rem;
+}
+
+.story-block {
+    position: relative;
+    z-index: 1;
+}
+
+.story-img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #f0f0f0;
+    display: block;
+}
+
+body.dark-mode .story-img {
+    background: #2a2a2a;
+}
+
+.story-img:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+.story-img.large {
+    aspect-ratio: 4 / 5;
+}
+
+.story-img.medium {
+    aspect-ratio: 3 / 4;
+}
+
+.story-img.wide {
+    aspect-ratio: 16 / 9;
+}
+
+.story-img.small {
+    aspect-ratio: 1 / 1;
+}
+
+.photo-caption {
+    margin-top: 0.75rem;
+    font-size: 0.95rem;
+    color: #777;
+    font-style: italic;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+/* Story text blocks */
+.story-text {
+    margin-top: 2rem;
+    padding: 0 1rem;
+    position: relative;
+    z-index: 2;
+}
+
+.story-text p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
+    max-width: 500px;
+}
+
+/* Section link cards */
+.section-link-card {
+    background: white;
+    border-radius: 16px;
+    padding: 3rem;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+.section-link-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 40px rgba(0,0,0,0.12);
+}
+
+.section-link-card h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.section-link-card p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.story-link {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #667eea;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.2s ease;
+}
+
+.story-link:hover {
+    color: #764ba2;
+}
+
+/* Specific block layouts */
+.cola-hero {
+    grid-column: 1 / 6;
+}
+
+.travel-wide {
+    grid-column: 6 / 13;
+}
+
+.cola-small {
+    grid-column: 2 / 5;
+    margin-top: -3rem;
+}
+
+.hiking-moment {
+    grid-column: 6 / 10;
+}
+
+.landscape {
+    grid-column: 1 / 8;
+}
+
+.fitness-lead {
+    grid-column: 8 / 13;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.fitness-photo-slot,
+.professional-photo-slot {
+    display: contents;
+}
+
+.group-shot {
+    grid-column: 2 / 8;
+}
+
+.professional-lead {
+    grid-column: 8 / 13;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.travel-pair {
+    grid-column: 1 / 7;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.nerd-lead {
+    grid-column: 7 / 12;
+}
+
+.cola-cosy {
+    grid-column: 3 / 8;
+}
+
+/* Footer CTA */
+.home-footer {
+    max-width: 800px;
+    margin: 6rem auto 4rem;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.home-footer p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.footer-secondary {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #777;
+}
+
+/* Dark mode */
+body.dark-mode .home-hero h1,
+body.dark-mode .section-link-card h2,
+body.dark-mode .home-footer p {
+    color: #eee;
+}
+
+body.dark-mode .home-intro,
+body.dark-mode .story-text p,
+body.dark-mode .section-link-card p,
+body.dark-mode .footer-secondary {
+    color: #bbb;
+}
+
+body.dark-mode .photo-caption {
+    color: #999;
+}
+
+body.dark-mode .section-link-card {
+    background: #2a2a2a;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.3);
+}
+
+body.dark-mode .section-link-card:hover {
+    box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .photo-story {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 1.5rem;
+        row-gap: 3rem;
+    }
+
+    .cola-hero {
+        grid-column: 1 / 4;
+    }
+
+    .travel-wide {
+        grid-column: 4 / 7;
+    }
+
+    .cola-small {
+        grid-column: 1 / 3;
+        margin-top: 0;
+    }
+
+    .hiking-moment {
+        grid-column: 3 / 7;
+    }
+
+    .landscape {
+        grid-column: 1 / 7;
+    }
+
+    .fitness-lead {
+        grid-column: 1 / 7;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .group-shot {
+        grid-column: 1 / 5;
+    }
+
+    .professional-lead {
+        grid-column: 1 / 7;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .travel-pair {
+        grid-column: 1 / 7;
+    }
+
+    .nerd-lead {
+        grid-column: 1 / 7;
+    }
+
+    .cola-cosy {
+        grid-column: 2 / 6;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .home-hero {
+        padding: 4rem 1.5rem 3rem;
+    }
+
+    .home-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .home-intro {
+        font-size: 1.1rem;
+    }
+
+    .photo-story {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    .cola-hero,
+    .travel-wide,
+    .cola-small,
+    .hiking-moment,
+    .landscape,
+    .fitness-lead,
+    .group-shot,
+    .professional-lead,
+    .travel-pair,
+    .nerd-lead,
+    .cola-cosy {
+        grid-column: 1;
+    }
+
+    .fitness-lead,
+    .professional-lead,
+    .travel-pair {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .section-link-card {
+        padding: 2rem;
+    }
+
+    .section-link-card h2 {
+        font-size: 1.75rem;
+    }
+
+    .story-img.large,
+    .story-img.medium {
+        aspect-ratio: 4 / 5;
+    }
+
+    .story-img.wide {
+        aspect-ratio: 3 / 2;
+    }
+
+    .home-footer {
+        margin: 4rem auto 3rem;
+    }
+
+    .home-footer p {
+        font-size: 1.25rem;
+    }
+
+    .footer-secondary {
+        font-size: 1rem;
+    }
+}

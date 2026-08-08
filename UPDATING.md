@@ -12,12 +12,27 @@ The **Nerd Stuff** section can be updated either manually or via Discord bot exp
 
 ## General Updates
 
-### Home, Professional, Fitness Pages
+### Home, Professional Pages
 
 **To update content:**
-1. Edit the relevant HTML file (`index.html`, `professional.html`, `fitness.html`)
-2. Update text, stats, dates, or workout programs
+1. Edit the relevant HTML file (`index.html`, `professional.html`)
+2. Update text, stats, dates
 3. Commit and push changes
+
+### Fitness Page
+
+**To update training block:**
+1. Tell Claude Code: "I'm starting Block [number]"
+2. Provide the training spreadsheet link
+3. Claude will:
+   - Read the new block's workout data from the spreadsheet
+   - Update all 5 training sessions on `fitness.html`
+   - Keep PRs, hero text, and layout unchanged
+   - Commit and push
+
+**To update Personal Records:**
+- Edit the PRs section in `fitness.html` manually, or
+- Tell Claude the new PR values (Squat, Bench, Deadlift)
 
 **To update photos:**
 - Home photos: Add to `images/home/` and update `home-photos.js`

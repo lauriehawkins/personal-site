@@ -37,7 +37,9 @@ const photoLibrary = {
         'PXL_20260731_094632842.jpg',
         'PXL_20260731_095002270.jpg',
         'PXL_20260804_092619145.jpg',
-        'PXL_20260804_092926380.MP.jpg'
+        'PXL_20260804_092926380.MP.jpg',
+        'PXL_20260816_105833203.jpg',
+        'IMG-20210729-WA0016.jpg'
     ],
 
     people: [
@@ -73,6 +75,7 @@ const photoLibrary = {
 
     candid: [
         'DSC_1021.JPG',
+        'DSC_1043.JPG',
         'IMG20240329140054.jpg',
         'IMG20240329140120.jpg',
         'PXL_20241024_110921542.PORTRAIT.jpg',

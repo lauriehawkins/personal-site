@@ -2,3 +2,6 @@ node_modules/
 .env
 bot/data/
 !images/
+
+# macOS Finder metadata - listed last so it applies inside images/ too
+.DS_Store

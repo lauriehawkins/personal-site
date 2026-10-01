@@ -8,7 +8,8 @@ const photoLibrary = {
         'IMG20240525170512.jpg',
         'PXL_20241123_184043635.jpg',
         { file: 'PXL_20241225_111451734.jpg', position: 'left center' },
-        'PXL_20260426_112034736.MP.jpg'
+        'PXL_20260426_112034736.MP.jpg',
+        'cola-canal-boat.jpg'
     ],
 
     travel: [
@@ -83,7 +84,8 @@ const photoLibrary = {
         'PXL_20250914_112657924.PORTRAIT.jpg',
         'PXL_20260124_105707968.PORTRAIT.jpg',
         'PXL_20260426_113916927.jpg',
-        'PXL_20260804_173429870.jpg'
+        'PXL_20260804_173429870.jpg',
+        'cola-canal-boat.jpg'
     ]
 };
 

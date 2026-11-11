@@ -6,6 +6,7 @@
     <title>Fitness - Laurie Hawkins</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fitness-extra.css">
 </head>
 <body>
     <script>
@@ -31,24 +32,25 @@
             <p class="hero-subtitle">Plus mountain biking, hiking, learning to ski, the occasional parkrun, and running with the dog.</p>
         </div>
 
+<div class="fitness-tabs" aria-label="Fitness pages"><a href="fitness.html" aria-current="page">Current sessions</a><a href="engines.html">Engine Library</a></div>
         <section class="program-section">
             <div class="training-split">
-                <div class="training-day" onclick="toggleDay(this)">
-                    <div class="day-header">
+                <details class="training-day">
+                    <summary class="day-header">
                         <div class="day-title">
                             <h3>Day 1 - Legs</h3>
                             <span class="expand-icon">▼</span>
                         </div>
-                    </div>
+                    </summary>
                     <div class="day-content">
                         <div class="accessories-detail">
                             <h4>Look Good</h4>
                             <ul class="exercise-list">
-                                <li>Pendulum Squat: 3 × 6–10</li>
+                                <li>Straight Hack Squat: 3 × 5–8 (technical)</li>
                                 <li>Leg Press: ramp to a good 10 (~2 RIR), then half load × 60s AMRAP</li>
-                                <li>Seated Leg Curl: 2 × 10–15</li>
-                                <li>Stair Calf Raises: 3 → 17 rep ladder (150 total)</li>
-                                <li>Deadbugs: 2 × 10 per side</li>
+                                <li>Seated Leg Curl: 2 × 8–12</li>
+                                <li>Stair Calf Raises: 4 → 18 rep ladder (165 total)</li>
+                                <li>Deadbugs: 3 × 10 per side</li>
                             </ul>
                         </div>
                         <div class="conditioning-detail">
@@ -59,94 +61,78 @@
                             </ul>
                         </div>
                     </div>
-                </div>
+                </details>
 
-                <div class="training-day" onclick="toggleDay(this)">
-                    <div class="day-header">
+                <details class="training-day">
+                    <summary class="day-header">
                         <div class="day-title">
                             <h3>Day 2 - Back &amp; Arms</h3>
                             <span class="expand-icon">▼</span>
                         </div>
-                    </div>
+                    </summary>
                     <div class="day-content">
                         <div class="accessories-detail">
                             <h4>Look Good</h4>
                             <ul class="exercise-list">
-                                <li>Machine Pullover: 3 × 8–12</li>
-                                <li>Unilateral Lat Pulldown: 3 × 8–12 per side</li>
-                                <li>T-Bar Row: 2 × 8–12</li>
+                                <li>Machine Pullover: 3 × 6–10</li>
+                                <li>Unilateral Lat Pulldown: 3 × 6–10 per side</li>
+                                <li>T-Bar Row: 2 × 6–10</li>
                                 <li>Face Pulls: 2 × 12–20</li>
-                                <li>Machine Bicep Curl: 2 × 10–15</li>
-                                <li>Overhead Cable Tricep Extension: 3 × 10–15</li>
+                                <li>Machine Bicep Curl: 2 × 8–12</li>
+                                <li>Overhead Cable Tricep Extension: 3 × 8–12</li>
                                 <li>Cable Side Bend: 2 × 10–12 per side</li>
                             </ul>
                         </div>
                         <div class="conditioning-detail">
                             <h4>Feel Good</h4>
-                            <p class="circuit-format">Tri-Phasic 50 - 25 min cap</p>
-                            <ul class="exercise-list">
-                                <li>Echo Bike: 50 cal (Partner: 40 cal)</li>
-                                <li>50 DB Thrusters</li>
-                                <li>40 Box Jump-overs</li>
-                                <li>30 DB Renegade Rows</li>
-                                <li>40 Box Jump-overs</li>
-                                <li>50 DB Walking Lunges</li>
-                                <li>Me: 50 cal SkiErg / Partner: 50 cal Row</li>
-                            </ul>
+                            <p class="circuit-format">Two Engines · 5 rounds, 25 min cap</p><ul class="exercise-list"><li>Me: 32 cal Echo Bike / Partner: 500m row per round</li><li>Start each round together; rest until both are ready</li></ul><a class="engine-link" href="engines.html#e04">Full workout instructions →</a>
                         </div>
                     </div>
-                </div>
+                </details>
 
-                <div class="training-day" onclick="toggleDay(this)">
-                    <div class="day-header">
+                <details class="training-day">
+                    <summary class="day-header">
                         <div class="day-title">
                             <h3>Day 3 - Chest, Shoulders &amp; Arms</h3>
                             <span class="expand-icon">▼</span>
                         </div>
-                    </div>
+                    </summary>
                     <div class="day-content">
                         <div class="accessories-detail">
                             <h4>Look Good</h4>
                             <ul class="exercise-list">
-                                <li>Machine Chest Press: 3 × 6–10</li>
-                                <li>Chest Fly: 2 × 10–15</li>
+                                <li>Machine Chest Press: 3 × 5–8 (controlled)</li>
+                                <li>Chest Fly: 2 × 8–12</li>
                                 <li>Reverse Cable Crossover: 2 × 12–20</li>
                                 <li>Front / Lateral Raise 1-to-10 Ladder: 2 passes</li>
-                                <li>Hammer Curl: 2 × 8–12</li>
-                                <li>Bar Tricep Pushdown: 2 × 10–15</li>
+                                <li>Hammer Curl: 2 × 8–10</li>
+                                <li>Bar Tricep Pushdown: 2 × 8–12</li>
                                 <li>Cable Chop: 2 × 10–12 per side</li>
                             </ul>
                         </div>
                         <div class="conditioning-detail">
                             <h4>Feel Good</h4>
-                            <p class="circuit-format">Cardio Bay Gauntlet - 25 min cap</p>
-                            <ul class="exercise-list">
-                                <li>Echo Bike: 30 cal (Partner: 24 cal)</li>
-                                <li>30 Box Step-overs</li>
-                                <li>Me: 15 cal SkiErg / Partner: 750m Row</li>
-                                <li>20 DB Box Step-overs</li>
-                                <li>Echo Bike: 15 cal (Partner: 12 cal)</li>
-                            </ul>
+                            <p class="circuit-format">DB + Box Destroyer · 20 min cap</p><ul class="exercise-list"><li>40 alternating DB snatches</li><li>30 DB box step-overs</li><li>20 DB walking lunges</li><li>10 Devil presses</li><li>40 unweighted box step-overs</li></ul><a class="engine-link" href="engines.html#e10">Full workout instructions →</a>
                         </div>
                     </div>
-                </div>
+                </details>
 
-                <div class="training-day" onclick="toggleDay(this)">
-                    <div class="day-header">
+                <details class="training-day">
+                    <summary class="day-header">
                         <div class="day-title">
                             <h3>Day 4 - Squat &amp; Hamstrings</h3>
                             <span class="expand-icon">▼</span>
                         </div>
-                    </div>
+                    </summary>
                     <div class="day-content">
                         <div class="accessories-detail">
                             <h4>Look Good</h4>
                             <ul class="exercise-list">
                                 <li>Barbell Back Squat: 3 × 5 (submaximal)</li>
-                                <li>Independent Leg Press: 2 × 8–10 per side</li>
-                                <li>Leg Extension: build to a solid 10, then half load × (10 reps / 10s hold at top / 10 reps / 10s hold at mid / 10 reps)</li>
-                                <li>Lying Hamstring Curl: 2 × 10–15</li>
-                                <li>Seated Calf Raise: 2 × 10–15</li>
+                                <li>Independent Leg Press: 2 × 6–8 per side</li>
+                                <li>Leg Extension: 1 wave — 10 reps / 10s hold at top / 10 reps / 10s hold at mid / 10 reps</li>
+                                <li>Lying Hamstring Curl: 2 × 8–12</li>
+                                <li>Standing Calf Raise: 2 × 8–12 (trial)</li>
                                 <li>Cable Crunch: 2 × 10–15</li>
                             </ul>
                         </div>
@@ -157,28 +143,28 @@
                                 <li>One Echo Bike, 10 turns each, I-go-you-go</li>
                                 <li>Me: 120 cal (8 × 10 + 2 × 20)</li>
                                 <li>Partner: 80 cal (10 × 8)</li>
-                            </ul>
+                            </ul><a class="engine-link" href="engines.html#e03">Full workout instructions →</a>
                         </div>
                     </div>
-                </div>
+                </details>
 
-                <div class="training-day" onclick="toggleDay(this)">
-                    <div class="day-header">
+                <details class="training-day">
+                    <summary class="day-header">
                         <div class="day-title">
                             <h3>Day 5 - Upper Body</h3>
                             <span class="expand-icon">▼</span>
                         </div>
-                    </div>
+                    </summary>
                     <div class="day-content">
                         <div class="accessories-detail">
                             <h4>Look Good</h4>
                             <ul class="exercise-list">
-                                <li>Machine Pullover: 2 × 8–12</li>
-                                <li>Chest Fly: 2 × 10–15</li>
-                                <li>Rear Delt Machine: 2 × 12–15</li>
-                                <li>Machine Lateral Raise: 2 × 10–15</li>
-                                <li>Bayesian Cable Curl: 2 × 10–15</li>
-                                <li>Cross-body Cable Tricep Extension: 3 × 10–15 per side</li>
+                                <li>Machine Pullover: 2 × 6–10</li>
+                                <li>Chest Fly: 2 × 8–12</li>
+                                <li>Rear Delt Machine: 2 × 10–15</li>
+                                <li>Machine Shoulder Press: 2 × 8–12 (technique trial)</li>
+                                <li>Bayesian Cable Curl: 2 × 8–12 per side</li>
+                                <li>Cross-body Cable Tricep Extension: 3 × 8–12 per side</li>
                             </ul>
                         </div>
                         <div class="conditioning-detail">
@@ -190,10 +176,10 @@
                                 <li>6 Devil Presses</li>
                                 <li>Echo Bike: 10 cal (Partner: 8 cal)</li>
                                 <li>12 Box Step-ups</li>
-                            </ul>
+                            </ul><a class="engine-link" href="engines.html#e02">Full workout instructions →</a>
                         </div>
                     </div>
-                </div>
+                </details>
             </div>
         </section>
 
@@ -225,21 +211,6 @@
 
     <button id="darkModeToggle" aria-label="Toggle dark mode">🌙</button>
     <script src="dark-mode.js"></script>
-    <script>
-        function toggleDay(element) {
-            const content = element.querySelector('.day-content');
-            const icon = element.querySelector('.expand-icon');
 
-            element.classList.toggle('expanded');
-
-            if (element.classList.contains('expanded')) {
-                content.style.maxHeight = content.scrollHeight + 'px';
-                icon.textContent = '▲';
-            } else {
-                content.style.maxHeight = '0';
-                icon.textContent = '▼';
-            }
-        }
-    </script>
 </body>
 </html>

@@ -1,0 +1,28 @@
+
+.fitness-tabs { display:flex; justify-content:center; gap:.5rem; margin:2rem 0; flex-wrap:wrap; }
+.fitness-tabs a,.engine-jumps a { color:var(--color-text); text-decoration:none; padding:.65rem 1.1rem; border:1px solid #cc5500; border-radius:30px; }
+.fitness-tabs a[aria-current],.fitness-tabs a:hover,.engine-jumps a:hover { background:#cc5500; color:white; }
+.engine-link { display:inline-block; color:#cc5500; font-weight:600; margin-top:1rem; }
+body.dark-mode .engine-link { color:#ffad70; }
+details.training-day { cursor:default; }
+summary.day-header { cursor:pointer; list-style:none; }
+summary.day-header::-webkit-details-marker { display:none; }
+summary:focus-visible { outline:2px solid #cc5500; outline-offset:4px; }
+details.training-day .day-content { max-height:none; overflow:visible; }
+details[open] .expand-icon { transform:rotate(180deg); }
+.engine-intro { margin:2rem 0; padding:2rem; border-radius:12px; background:var(--color-bg-card); }
+.engine-intro p { margin-top:.8rem; max-width:75ch; }
+.engine-jumps { display:flex; flex-wrap:wrap; gap:.7rem; margin-top:1.5rem; }
+.engine-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1.5rem; }
+.engine-card { background:var(--color-bg-card); padding:2rem; border-radius:12px; border-top:3px solid #cc5500; scroll-margin-top:6rem; }
+.engine-card:target { outline:2px solid #cc5500; outline-offset:4px; }
+.engine-id { color:#cc5500; font-size:.8rem; font-weight:800; letter-spacing:.15em; }
+body.dark-mode .engine-id { color:#ffad70; }
+.engine-card h2 { font-size:1.5rem; margin:.4rem 0; }
+.engine-mode { color:var(--color-text-light); font-size:.85rem; margin-bottom:1.5rem; }
+.engine-card ol { padding-left:1.4rem; }
+.engine-card li { padding:.7rem 0; border-bottom:1px solid #80808033; }
+.engine-card li strong,.engine-card li span,.engine-card li small { display:block; }
+.engine-card li strong { font-size:.75rem; text-transform:uppercase; color:var(--color-text-light); }
+.engine-card li small { color:var(--color-text-light); }
+@media(max-width:700px) { .engine-grid { grid-template-columns:1fr; } .engine-card,.engine-intro { padding:1.4rem; } .day-header { padding:1.4rem; } }
